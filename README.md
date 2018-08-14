@@ -1,5 +1,5 @@
 # docker-SeekDeep
-A Dockerfile for building a docker with all needed libraries for SeekDeep 
+A dockerfile for building a docker with all needed libraries for SeekDeep 
 
 # Building docker image
 
