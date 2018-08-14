@@ -11,7 +11,7 @@ MAINTAINER Nicholas Hathaway <nicholas.hathaway@umassmed.edu>
 ENV HOME=/root TERM=xterm
 
 # set proper timezone
-RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
+#RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 # Install essential for building
 RUN \
