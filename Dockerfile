@@ -3,7 +3,7 @@
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
 
-FROM phusion/baseimage:0.10.1
+FROM phusion/baseimage:0.9.16
 
 MAINTAINER Nicholas Hathaway <nicholas.hathaway@umassmed.edu>
 
@@ -11,7 +11,7 @@ MAINTAINER Nicholas Hathaway <nicholas.hathaway@umassmed.edu>
 ENV HOME=/root TERM=xterm
 
 # set proper timezone
-#RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
+RUN echo America/New_York > /etc/timezone && sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 # Install essential for building
 RUN \
